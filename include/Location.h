@@ -7,21 +7,14 @@
 
 #include <string>
 #include <vector>
+#include <Context>
 
-class Location {
-protected:
-    int local_time_;
-
+class Location : public Context {
 public:
     void set_local_time(int time) {local_time_ = time;}
 
-    int get_local_time() {return local_time_;}
-
     virtual void AdvanceTime(int delta_time) = 0;
 
-    virtual std::vector<string> ExecuteCommand(std::string command) = 0;
-
-    virtual std::vector<string> Help() = 0;
 };
 #endif //BEANIEBABYSIM_LOCATION_H
 

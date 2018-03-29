@@ -14,7 +14,6 @@ class Simulation {
     Simulation();
 
     std::string get_time_string();
-
 };
 
 
