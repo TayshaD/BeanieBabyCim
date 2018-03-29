@@ -6,14 +6,12 @@
 #define BEANIEBABYSIM_SIMULATION_H
 
 #include <string>
+#include "Context.h"
 
-class Simulation {
-
-    int global_time_;
+class Simulation : public Context {
 
     Simulation();
 
-    std::string get_time_string();
 };
 
 
