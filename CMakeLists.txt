@@ -11,4 +11,4 @@ include_directories(${INC_DIR})
 
 file(GLOB_RECURSE BeanieBabySim_SRC ${INC_DIR}/*.h ${SRC_DIR}/*.cpp)
 
-add_executable(BeanieBabySim src/main.cpp include/Simulation.h)
+add_executable(BeanieBabySim ${BeanieBabySim_SRC})
