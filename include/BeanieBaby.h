@@ -39,7 +39,7 @@ public:
      * @param copies number of copies that should exist of the new baby
      * @return
      */
-    friend BeanieBaby& operator=(BeanieBaby& other_baby, const int& copies);
+    friend BeanieBaby& operator=(BeanieBaby& other_baby, const int& copies = 1);
 
     /**I need a custom == operator because two Beanie Babies are equal when they have the same name and base price, not
      * necessarily when they have the same number of copies.

@@ -14,3 +14,18 @@ TEST_CASE("Parsing beanie baby data from text") {
       REQUIRE(babies.size() == 45);
    }
 }
+
+TEST_CASE("Copying a BeanieBaby object doesn't copy the copies_ field") {
+    BeanieBaby example_baby("Iggy Example", 16);
+
+    SECTION("Specifying valid number of copies creates duplicate with specified number of copies") {
+
+    }
+
+    SECTION("Specifying an invalid number of copies creates duplicate with default number of copies") {
+        SECTION("# of copies > original object results in copy.copies_ = original copies_ field") {}
+        SECTION("# copies < 0 results in copies_ = 1") {}
+    }
+
+    SECTION("Not specifying any # of copies results in copies_ = 1") {}
+}
