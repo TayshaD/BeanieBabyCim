@@ -1,5 +1,7 @@
 #include <BeanieBaby.h>
 
+BeanieBaby::BeanieBaby() : name_(""), base_price_(5), copies_(1) {};
+
 /**
  * Loads BeanieBaby data from fixed url to a string
  * @return string with url contents (i.e. json) or empty string on load fail
