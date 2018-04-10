@@ -22,11 +22,16 @@ class BeanieBaby {
     /**The price of the baby after its current market value is taken into account*/
     double market_price_;
 
+    /**How many copies of this baby exist in the sim world.*/
+    int copies_;
+
     /**When a baby is retired, it is no longer being produced, and its market value increases*/
     bool retired_;
 
 public:
+    BeanieBaby();
 
+    explicit BeanieBaby(std::string name, int copies = 1, int base_price = 5);
 };
 
 /**Method to read file from url and return string*/
