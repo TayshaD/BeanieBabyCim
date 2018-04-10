@@ -31,7 +31,7 @@ class BeanieBaby {
 public:
     BeanieBaby();
 
-    explicit BeanieBaby(std::string name, int copies = 1, int base_price = 5);
+    explicit BeanieBaby(std::string name, int copies = 1, double base_price = 5);
 };
 
 /**Method to read file from url and return string*/

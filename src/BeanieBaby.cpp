@@ -2,6 +2,10 @@
 
 BeanieBaby::BeanieBaby() : name_(""), base_price_(5), copies_(1) {};
 
+BeanieBaby::BeanieBaby(std::string name, int copies = 1, double base_price = 5) : name_(name),
+                                                                                  copies_(copies),
+                                                                                  base_price_(base_price){};
+
 /**
  * Loads BeanieBaby data from fixed url to a string
  * @return string with url contents (i.e. json) or empty string on load fail
