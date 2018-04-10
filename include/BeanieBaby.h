@@ -10,7 +10,7 @@ using json = nlohmann::json;
 
 class BeanieBaby {
     /**Name of the Beanie Baby**/
-    static std::string name_;
+    std::string name_;
 
     /**Starting price of the baby before any adjustments.*/
     double base_price_;
@@ -31,7 +31,7 @@ class BeanieBaby {
 public:
     BeanieBaby();
 
-    explicit BeanieBaby(std::string name, int copies = 1, double base_price = 5);
+    BeanieBaby(std::string name, int copies, double base_price = 5);
 };
 
 /**Method to read file from url and return string*/

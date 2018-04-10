@@ -62,7 +62,7 @@
         <entry file="file://$PROJECT_DIR$/include/BeanieBaby.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="372">
-              <caret line="33" column="65" selection-start-line="33" selection-start-column="65" selection-end-line="33" selection-end-column="65" />
+              <caret line="33" column="43" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
               <folding>
                 <element signature="e#71#91#0" expanded="true" />
               </folding>
@@ -73,8 +73,8 @@
       <file leaf-file-name="BeanieBaby.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/BeanieBaby.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="-920">
+              <caret line="4" column="51" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -83,7 +83,7 @@
         <entry file="file://$PROJECT_DIR$/test/BeanieBabyTest.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="217">
-              <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -270,12 +270,6 @@
     <configuration />
   </component>
   <component name="TestHistory">
-    <history-entry file="Loading_data_from_url - 2018.04.10 at 08h 53m 56s.xml">
-      <configuration name="Loading data from url" configurationId="CMakeCatchTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Parsing_beanie_baby_data_from_text - 2018.04.10 at 11h 04m 26s.xml">
-      <configuration name="Parsing beanie baby data from text" configurationId="CMakeCatchTestRunConfigurationType" />
-    </history-entry>
     <history-entry file="Parsing_beanie_baby_data_from_text - 2018.04.10 at 11h 05m 08s.xml">
       <configuration name="Parsing beanie baby data from text" configurationId="CMakeCatchTestRunConfigurationType" />
     </history-entry>
@@ -298,6 +292,12 @@
       <configuration name="Parsing beanie baby data from text" configurationId="CMakeCatchTestRunConfigurationType" />
     </history-entry>
     <history-entry file="Parsing_beanie_baby_data_from_text - 2018.04.10 at 11h 12m 02s.xml">
+      <configuration name="Parsing beanie baby data from text" configurationId="CMakeCatchTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Parsing_beanie_baby_data_from_text - 2018.04.10 at 11h 32m 55s.xml">
+      <configuration name="Parsing beanie baby data from text" configurationId="CMakeCatchTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Parsing_beanie_baby_data_from_text - 2018.04.10 at 11h 33m 18s.xml">
       <configuration name="Parsing beanie baby data from text" configurationId="CMakeCatchTestRunConfigurationType" />
     </history-entry>
   </component>
@@ -367,7 +367,9 @@
     <MESSAGE value="outline definition of Parse" />
     <MESSAGE value="declared constructors for BeanieBaby" />
     <MESSAGE value="initialized values with mandatory defaults in header" />
-    <option name="LAST_COMMIT_MESSAGE" value="initialized values with mandatory defaults in header" />
+    <MESSAGE value="wrote BeanieBaby constructors" />
+    <MESSAGE value="tentative implementation of Parse" />
+    <option name="LAST_COMMIT_MESSAGE" value="tentative implementation of Parse" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/test/BeanieBabyTest.cpp">
@@ -661,14 +663,14 @@
     <entry file="file://$PROJECT_DIR$/test/BeanieBabyTest.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
-          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include/BeanieBaby.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="372">
-          <caret line="33" column="65" selection-start-line="33" selection-start-column="65" selection-end-line="33" selection-end-column="65" />
+          <caret line="33" column="43" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
           <folding>
             <element signature="e#71#91#0" expanded="true" />
           </folding>
@@ -677,8 +679,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BeanieBaby.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="-920">
+          <caret line="4" column="51" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="51" />
         </state>
       </provider>
     </entry>

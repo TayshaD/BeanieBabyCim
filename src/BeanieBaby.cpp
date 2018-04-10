@@ -2,9 +2,9 @@
 
 BeanieBaby::BeanieBaby() : name_(""), base_price_(5), copies_(1) {};
 
-BeanieBaby::BeanieBaby(std::string name, int copies = 1, double base_price = 5) : name_(name),
-                                                                                  copies_(copies),
-                                                                                  base_price_(base_price){};
+BeanieBaby::BeanieBaby(std::string name, int copies, double base_price /*=5*/) : name_(name),
+                                                                                        copies_(copies),
+                                                                                        base_price_(base_price){};
 
 /**
  * Loads BeanieBaby data from fixed url to a string
@@ -28,11 +28,17 @@ BeanieBaby::BeanieBaby(std::string name, int copies = 1, double base_price = 5) 
 std::vector<BeanieBaby> ParseBeanieData(std::string raw_json) {
     std::vector<BeanieBaby> babies;
      auto parsed_json = json::parse(raw_json.c_str());
-     for (int json_index = 0; json_index < parsed_json.size(); i++) {
+     for (int json_index = 0; json_index < parsed_json.size(); json_index++) {
          std::string name = parsed_json[json_index]["name"];
-         double base_price = parsed_json[json_index]["base_price"];
+         int base_price = parsed_json[json_index]["base_price"];
          int copies = parsed_json[json_index]["copies"];
-         BeanieBaby baby(name, copies, base_price);
+
+         BeanieBaby baby;
+         if (copies && base_price) {
+             baby = BeanieBaby(name, copies, base_price);
+         } else if (base_price) {
+             baby = BeanieBaby(name, base_price)
+         }
          babies.push_back(baby);
      }
 
