@@ -33,15 +33,15 @@ public:
 
     BeanieBaby(std::string name, int copies, double base_price = 5);
 
-    void transfer_copies(BeanieBaby& other_baby, int copies_to_transfer);
-
-    bool get_name();
+    std::string get_name();
 
     int get_copies();
 
     double get_price();
 
     bool is_retired();
+
+    void transfer_copies(BeanieBaby& other_baby, int copies_to_transfer);
 
     static std::vector<BeanieBaby> All_Babies;
 

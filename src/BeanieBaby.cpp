@@ -4,7 +4,24 @@ BeanieBaby::BeanieBaby() : name_(""), base_price_(5), copies_(1) {};
 
 BeanieBaby::BeanieBaby(std::string name, int copies, double base_price /*=5*/) : name_(name),
                                                                                  copies_(copies),
-                                                                                 base_price_(base_price){};
+                                                                                 base_price_(base_price) {};
+
+std::string BeanieBaby::get_name() {
+    return this->name_;
+}
+
+int BeanieBaby::get_copies() {
+    return this->copies_;
+}
+
+double BeanieBaby::get_price() {
+    return this->market_price_;
+}
+
+bool BeanieBaby::is_retired() {
+    return this->retired_;
+}
+
 
 /**
  * Loads BeanieBaby data from fixed url to a string
@@ -40,3 +57,5 @@ std::vector<BeanieBaby> ParseBeanieData(std::string raw_json) {
 
     return babies;
  }
+
+std::vector<BeanieBaby> All_Babies = ParseBeanieData(LoadBeanieBabyData());
