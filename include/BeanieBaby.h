@@ -32,6 +32,27 @@ public:
     BeanieBaby();
 
     BeanieBaby(std::string name, int copies, double base_price = 5);
+
+    /**Breaking the rule of three/five: I need a custom copy constructor, because in my case I DON'T want every member
+     * to be copied, as in the default. Consider the case where one buys
+     * @param other_Baby Baby to be copied.
+     * @param copies number of copies that should exist of the new baby
+     * @return
+     */
+    friend BeanieBaby& operator=(BeanieBaby& other_baby, const int& copies);
+
+    /**I need a custom == operator because two Beanie Babies are equal when they have the same name and base price, not
+     * necessarily when they have the same number of copies.
+     * @param other_baby the baby to compare to
+     * @return whether the two babies are equal
+     */
+    friend bool operator==(BeanieBaby& other_baby);
+
+    /**Overloading << operator to allow
+     * @param baby
+     * @return
+     */
+    friend std::ostream& operator<<(std::ostream&, const BeanieBaby& baby);
 };
 
 /**Method to read file from url and return string*/
