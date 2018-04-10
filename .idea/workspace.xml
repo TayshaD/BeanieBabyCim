@@ -3,6 +3,33 @@
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
       <config projectName="BeanieBabySim" targetName="BeanieBabySim" />
+      <config projectName="BeanieBabySim" targetName="raw_body_tests" />
+      <config projectName="BeanieBabySim" targetName="util_tests" />
+      <config projectName="BeanieBabySim" targetName="get_tests" />
+      <config projectName="BeanieBabySim" targetName="gtest" />
+      <config projectName="BeanieBabySim" targetName="opts-html" />
+      <config projectName="BeanieBabySim" targetName="gtest_main" />
+      <config projectName="BeanieBabySim" targetName="post_tests" />
+      <config projectName="BeanieBabySim" targetName="pdf" />
+      <config projectName="BeanieBabySim" targetName="delete_tests" />
+      <config projectName="BeanieBabySim" targetName="alternating_tests" />
+      <config projectName="BeanieBabySim" targetName="cpr" />
+      <config projectName="BeanieBabySim" targetName="error_tests" />
+      <config projectName="BeanieBabySim" targetName="test_server" />
+      <config projectName="BeanieBabySim" targetName="head_tests" />
+      <config projectName="BeanieBabySim" targetName="session_tests" />
+      <config projectName="BeanieBabySim" targetName="mongoose" />
+      <config projectName="BeanieBabySim" targetName="patch_tests" />
+      <config projectName="BeanieBabySim" targetName="html" />
+      <config projectName="BeanieBabySim" targetName="opts-pdf" />
+      <config projectName="BeanieBabySim" targetName="options_tests" />
+      <config projectName="BeanieBabySim" targetName="uninstall" />
+      <config projectName="BeanieBabySim" targetName="generate-curl.1" />
+      <config projectName="BeanieBabySim" targetName="libcurl" />
+      <config projectName="BeanieBabySim" targetName="async_tests" />
+      <config projectName="BeanieBabySim" targetName="put_tests" />
+      <config projectName="BeanieBabySim" targetName="callback_tests" />
+      <config projectName="BeanieBabySim" targetName="proxy_tests" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -12,13 +39,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8bc82f6f-4d69-49d0-905b-e281ac56b7a4" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitmodules" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/BeanieBaby.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/BeanieBaby.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/Context.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/Context.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/src/curlcpp/src/CMakeFiles/" />
@@ -55,7 +77,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="66">
@@ -85,13 +107,9 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-            </state>
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -167,9 +185,63 @@
   <component name="RunManager" selected="Application.BeanieBabySim">
     <configuration name="BeanieBabySim" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="BeanieBabySim" TARGET_NAME="BeanieBabySim" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="BeanieBabySim" RUN_TARGET_NAME="BeanieBabySim" />
     <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="BeanieBabySim" RUN_TARGET_NAME="BeanieBabySim" EXPLICIT_BUILD_TARGET_NAME="all" />
+    <configuration name="alternating_tests" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="BeanieBabySim" TARGET_NAME="alternating_tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="BeanieBabySim" RUN_TARGET_NAME="alternating_tests" />
+    <configuration name="async_tests" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="BeanieBabySim" TARGET_NAME="async_tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="BeanieBabySim" RUN_TARGET_NAME="async_tests" />
+    <configuration name="callback_tests" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="BeanieBabySim" TARGET_NAME="callback_tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="BeanieBabySim" RUN_TARGET_NAME="callback_tests" />
+    <configuration name="cpr" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="BeanieBabySim" TARGET_NAME="cpr" CONFIG_NAME="Debug" />
+    <configuration name="delete_tests" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="BeanieBabySim" TARGET_NAME="delete_tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="BeanieBabySim" RUN_TARGET_NAME="delete_tests" />
+    <configuration name="error_tests" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="BeanieBabySim" TARGET_NAME="error_tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="BeanieBabySim" RUN_TARGET_NAME="error_tests" />
+    <configuration name="generate-curl.1" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="BeanieBabySim" TARGET_NAME="generate-curl.1" CONFIG_NAME="Debug" />
+    <configuration name="get_tests" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="BeanieBabySim" TARGET_NAME="get_tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="BeanieBabySim" RUN_TARGET_NAME="get_tests" />
+    <configuration name="gtest" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="BeanieBabySim" TARGET_NAME="gtest" CONFIG_NAME="Debug" />
+    <configuration name="gtest_main" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="BeanieBabySim" TARGET_NAME="gtest_main" CONFIG_NAME="Debug" />
+    <configuration name="head_tests" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="BeanieBabySim" TARGET_NAME="head_tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="BeanieBabySim" RUN_TARGET_NAME="head_tests" />
+    <configuration name="html" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="BeanieBabySim" TARGET_NAME="html" CONFIG_NAME="Debug" />
+    <configuration name="libcurl" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="BeanieBabySim" TARGET_NAME="libcurl" CONFIG_NAME="Debug" />
+    <configuration name="mongoose" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="BeanieBabySim" TARGET_NAME="mongoose" CONFIG_NAME="Debug" />
+    <configuration name="options_tests" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="BeanieBabySim" TARGET_NAME="options_tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="BeanieBabySim" RUN_TARGET_NAME="options_tests" />
+    <configuration name="opts-html" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="BeanieBabySim" TARGET_NAME="opts-html" CONFIG_NAME="Debug" />
+    <configuration name="opts-pdf" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="BeanieBabySim" TARGET_NAME="opts-pdf" CONFIG_NAME="Debug" />
+    <configuration name="patch_tests" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="BeanieBabySim" TARGET_NAME="patch_tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="BeanieBabySim" RUN_TARGET_NAME="patch_tests" />
+    <configuration name="pdf" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="BeanieBabySim" TARGET_NAME="pdf" CONFIG_NAME="Debug" />
+    <configuration name="post_tests" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="BeanieBabySim" TARGET_NAME="post_tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="BeanieBabySim" RUN_TARGET_NAME="post_tests" />
+    <configuration name="proxy_tests" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="BeanieBabySim" TARGET_NAME="proxy_tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="BeanieBabySim" RUN_TARGET_NAME="proxy_tests" />
+    <configuration name="put_tests" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="BeanieBabySim" TARGET_NAME="put_tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="BeanieBabySim" RUN_TARGET_NAME="put_tests" />
+    <configuration name="raw_body_tests" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="BeanieBabySim" TARGET_NAME="raw_body_tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="BeanieBabySim" RUN_TARGET_NAME="raw_body_tests" />
+    <configuration name="session_tests" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="BeanieBabySim" TARGET_NAME="session_tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="BeanieBabySim" RUN_TARGET_NAME="session_tests" />
+    <configuration name="test_server" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="BeanieBabySim" TARGET_NAME="test_server" CONFIG_NAME="Debug" />
+    <configuration name="uninstall" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="BeanieBabySim" TARGET_NAME="uninstall" CONFIG_NAME="Debug" />
+    <configuration name="util_tests" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="BeanieBabySim" TARGET_NAME="util_tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="BeanieBabySim" RUN_TARGET_NAME="util_tests" />
     <list>
       <item itemvalue="Application.Build All" />
       <item itemvalue="Application.BeanieBabySim" />
+      <item itemvalue="Application.cpr" />
+      <item itemvalue="Application.uninstall" />
+      <item itemvalue="Application.generate-curl.1" />
+      <item itemvalue="Application.html" />
+      <item itemvalue="Application.pdf" />
+      <item itemvalue="Application.opts-html" />
+      <item itemvalue="Application.opts-pdf" />
+      <item itemvalue="Application.libcurl" />
+      <item itemvalue="Application.gtest" />
+      <item itemvalue="Application.gtest_main" />
+      <item itemvalue="Application.mongoose" />
+      <item itemvalue="Application.alternating_tests" />
+      <item itemvalue="Application.async_tests" />
+      <item itemvalue="Application.callback_tests" />
+      <item itemvalue="Application.delete_tests" />
+      <item itemvalue="Application.error_tests" />
+      <item itemvalue="Application.get_tests" />
+      <item itemvalue="Application.head_tests" />
+      <item itemvalue="Application.options_tests" />
+      <item itemvalue="Application.patch_tests" />
+      <item itemvalue="Application.post_tests" />
+      <item itemvalue="Application.proxy_tests" />
+      <item itemvalue="Application.put_tests" />
+      <item itemvalue="Application.raw_body_tests" />
+      <item itemvalue="Application.session_tests" />
+      <item itemvalue="Application.test_server" />
+      <item itemvalue="Application.util_tests" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -179,12 +251,12 @@
     <frame x="993" y="25" width="927" height="1055" extended-state="4" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.37324703" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.37324703" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Messages" order="7" weight="0.3286026" />
-      <window_info anchor="bottom" id="CMake" order="7" visible="true" weight="0.26855895" />
+      <window_info anchor="bottom" id="CMake" order="7" weight="0.26855895" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32963374" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3286026" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
@@ -227,7 +299,8 @@
     <MESSAGE value="reworked Simulation to inherit from Context" />
     <MESSAGE value="added Simulation src; begin default constructor definition" />
     <MESSAGE value="added BeanieBaby header file" />
-    <option name="LAST_COMMIT_MESSAGE" value="added BeanieBaby header file" />
+    <MESSAGE value="updated BeanieBaby header with member variables" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated BeanieBaby header with member variables" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main.cpp">
@@ -576,13 +649,6 @@
     <entry file="file://$PROJECT_DIR$/src/curlcpp/src/curl_global.cpp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/BeanieBaby.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
@@ -621,9 +687,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="66">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
         </state>
       </provider>
     </entry>
