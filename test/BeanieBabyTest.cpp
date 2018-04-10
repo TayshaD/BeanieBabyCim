@@ -2,7 +2,10 @@
 #include "catch.hpp"
 
 TEST_CASE("Loading data from url") {
-   std::string json_url = "http://www.json-generator.com/api/json/get/ckqOcjuMwO?indent=2";
-   std::string url_text = LoadBeanieBabyData(json_url);
+   std::string url_text = LoadBeanieBabyData();
    REQUIRE(!url_text.empty());
+}
+
+TEST_CASE("Parsing beanie baby data from text") {
+
 }

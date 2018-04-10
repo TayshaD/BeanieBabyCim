@@ -27,11 +27,8 @@ public:
 
 };
 
-/**The url from which the JSON file with BeanieBaby data is to be loaded*/
-const std::string json_url = "http://www.json-generator.com/api/json/get/ckqOcjuMwO?indent=2";
-
 /**Method to read file from url and return string*/
-std::string LoadBeanieBabyData(std::string url);
+std::string LoadBeanieBabyData();
 
 /**Method to parse data from provided string and return BeanieBaby objects*/
 std::vector<BeanieBaby>  ParseBeanieData(std::string json_string);
