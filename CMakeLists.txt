@@ -8,12 +8,12 @@ set(INC_DIR include)
 set(TEST_DIR test)
 
 include_directories(${INC_DIR})
+file(GLOB_RECURSE BeanieBabySim_SRC ${INC_DIR}/*.h ${SRC_DIR}/*.cpp)
 
 add_subdirectory(cpr)
-
 include_directories(${CPR_INCLUDE_DIRS})
 
-file(GLOB_RECURSE BeanieBabySim_SRC ${INC_DIR}/*.h ${SRC_DIR}/*.cpp)
+add_executable(BeanieBabyTest ${TEST_DIR}/BeanieBabyTest.cpp)
 
 add_executable(BeanieBabySim ${BeanieBabySim_SRC})
 target_link_libraries(BeanieBabySim ${CPR_LIBRARIES})
