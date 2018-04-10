@@ -22,10 +22,13 @@ class BeanieBaby {
 
     /**When a baby is retired, it is no longer being produced, and its market value increases*/
     bool retired_;
+
+public:
+
 };
 
 /**The url from which the JSON file with BeanieBaby data is to be loaded*/
-const std::string json_url = "https://api.myjson.com/bins/19zuxx";
+const std::string json_url = "http://www.json-generator.com/api/json/get/ckqOcjuMwO?indent=2";
 
 /**Method to read file from url and return string*/
 std::string LoadBeanieBabyData(std::string url);
