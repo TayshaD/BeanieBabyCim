@@ -28,7 +28,7 @@ class BeanieBaby {
 const std::string json_url = "https://api.myjson.com/bins/19zuxx";
 
 /**Method to read file from url and return string*/
-std::string LoadBeanieBabyData();
+std::string LoadBeanieBabyData(std::string url);
 
 /**Method to parse data from provided string and return BeanieBaby objects*/
 std::vector<BeanieBaby>  ParseBeanieData(std::string json_string);
