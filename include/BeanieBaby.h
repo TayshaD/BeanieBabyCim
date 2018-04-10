@@ -2,8 +2,9 @@
 #define BEANIEBABYSIM_BEANIEBABY_H
 
 #include <string>
+#include <vector>
 
-class {
+class BeanieBaby {
     /**Name of the Beanie Baby**/
     std::string name_;
 
@@ -20,4 +21,14 @@ class {
     /**When a baby is retired, it is no longer being produced, and its market value increases*/
     bool retired_;
 };
+
+/**The url from which the JSON file with BeanieBaby data is to be loaded*/
+const std::string json_url = "https://api.myjson.com/bins/19zuxx";
+
+/**Method to read file from url and return string*/
+std::string LoadBeanieBabyData();
+
+/**Method to parse data from provided string and return BeanieBaby objects*/
+std::vector<BeanieBaby>  ParseBeanieData(std::string json_string);
+
 #endif //BEANIEBABYSIM_BEANIEBABY_H

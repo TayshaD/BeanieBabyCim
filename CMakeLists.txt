@@ -15,5 +15,5 @@ include_directories(${CPR_INCLUDE_DIRS})
 
 file(GLOB_RECURSE BeanieBabySim_SRC ${INC_DIR}/*.h ${SRC_DIR}/*.cpp)
 
-add_executable(BeanieBabySim ${BeanieBabySim_SRC} src/Data.cpp)
+add_executable(BeanieBabySim ${BeanieBabySim_SRC} src/Data.cpp include/Data.h)
 target_link_libraries(BeanieBabySim ${CPR_LIBRARIES})
