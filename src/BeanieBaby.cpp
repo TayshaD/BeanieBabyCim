@@ -6,6 +6,21 @@ BeanieBaby::BeanieBaby(std::string name, int copies, double base_price /*=5*/) :
                                                                                  copies_(copies),
                                                                                  base_price_(base_price) {};
 
+BeanieBaby::BeanieBaby(const BeanieBaby& other_baby, int copies) {
+    if (copies > other_baby.copies_) {
+        copies = 1;
+    } else if (copies < 0) {
+        copies = 0;
+    }
+
+    this->name_ = other_baby.name_;
+    this->base_price_ = other_baby.base_price_;
+    this->market_value_ = other_baby.market_value_;
+    this->copies_ = copies;
+}
+
+std::vector<BeanieBaby> All_Babies = ParseBeanieData(LoadBeanieBabyData());
+
 std::string BeanieBaby::get_name() {
     return this->name_;
 }
@@ -57,5 +72,3 @@ std::vector<BeanieBaby> ParseBeanieData(std::string raw_json) {
 
     return babies;
  }
-
-std::vector<BeanieBaby> All_Babies = ParseBeanieData(LoadBeanieBabyData());

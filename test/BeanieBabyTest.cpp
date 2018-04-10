@@ -27,7 +27,7 @@ TEST_CASE("Copying a BeanieBaby object doesn't copy the copies_ field") {
         SECTION("# copies < 0 results in copies_ = 1") {}
     }
 
-    SECTION("Not specifying any # of copies results in copies_ = 1") {}
+    SECTION("Not specifying any # of copies results in copies_ = 0") {}
 }
 
 TEST_CASE("Comparison operator does not compare the copies_ field") {

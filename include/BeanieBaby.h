@@ -33,6 +33,12 @@ public:
 
     BeanieBaby(std::string name, int copies, double base_price = 5);
 
+    /**Breaking the rule of three/five: I need a custom copy constructor, because in my case I DON'T want every member
+     * to be copied, as in the default. Consider the case where one buys from the store. You now have x amount
+     * of objects, but the store has y amount of the same object. In total there are still x+y objects.
+     */
+    BeanieBaby(const BeanieBaby& other_baby, int copies = 1);
+
     std::string get_name();
 
     int get_copies();
@@ -44,14 +50,6 @@ public:
     void transfer_copies(BeanieBaby& other_baby, int copies_to_transfer);
 
     static std::vector<BeanieBaby> All_Babies;
-
-    /**Breaking the rule of three/five: I need a custom copy constructor, because in my case I DON'T want every member
-     * to be copied, as in the default. Consider the case where one buys
-     * @param other_Baby Baby to be copied.
-     * @param copies number of copies that should exist of the new baby
-     * @return
-     */
-    friend BeanieBaby& operator=(BeanieBaby& other_baby, const int& copies = 1);
 
     /**I need a custom == operator because two Beanie Babies are equal when they have the same name and base price, not
      * necessarily when they have the same number of copies.
@@ -71,6 +69,6 @@ public:
 std::string LoadBeanieBabyData();
 
 /**Method to parse data from provided string and return BeanieBaby objects*/
-std::vector<BeanieBaby>  ParseBea    boolnieData(std::string json_string);
+std::vector<BeanieBaby>  ParseBeanieData(std::string json_string);
 
 #endif //BEANIEBABYSIM_BEANIEBABY_H
