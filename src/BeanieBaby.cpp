@@ -28,7 +28,13 @@ BeanieBaby::BeanieBaby(std::string name, int copies = 1, double base_price = 5) 
 std::vector<BeanieBaby> ParseBeanieData(std::string raw_json) {
     std::vector<BeanieBaby> babies;
      auto parsed_json = json::parse(raw_json.c_str());
-
+     for (int json_index = 0; json_index < parsed_json.size(); i++) {
+         std::string name = parsed_json[json_index]["name"];
+         double base_price = parsed_json[json_index]["base_price"];
+         int copies = parsed_json[json_index]["copies"];
+         BeanieBaby baby(name, copies, base_price);
+         babies.push_back(baby);
+     }
 
      return babies;
  }
