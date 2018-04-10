@@ -13,3 +13,16 @@
     }
     return "";
 }
+
+/**
+ * Parses raw json into BeanieBaby objects
+ * @param raw_json json string
+ * @return vector of beanie babies
+ */
+std::vector<BeanieBaby> ParseBeanieData(std::string raw_json) {
+    std::vector<BeanieBaby> babies;
+     auto parsed_json = json::parse(raw_json.c_str());
+
+
+     return babies;
+ }

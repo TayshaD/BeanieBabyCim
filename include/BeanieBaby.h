@@ -5,6 +5,8 @@
 #include <json.hpp>
 #include <string>
 #include <vector>
+#include <iostream>
+using json = nlohmann::json;
 
 class BeanieBaby {
     /**Name of the Beanie Baby**/
