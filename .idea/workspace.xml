@@ -39,9 +39,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8bc82f6f-4d69-49d0-905b-e281ac56b7a4" name="Default" comment="added default value for">
+    <list default="true" id="8bc82f6f-4d69-49d0-905b-e281ac56b7a4" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/BeanieBaby.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/BeanieBaby.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/BeanieBabyTest.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/BeanieBabyTest.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -82,8 +81,8 @@
       <file leaf-file-name="BeanieBabyTest.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/BeanieBabyTest.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+            <state relative-caret-position="413">
+              <caret line="43" column="64" selection-start-line="43" selection-start-column="64" selection-end-line="43" selection-end-column="64" />
             </state>
           </provider>
         </entry>
@@ -371,7 +370,8 @@
     <MESSAGE value="tentative implementation of Parse" />
     <MESSAGE value="made copies mandatory in constructor" />
     <MESSAGE value="declared operator overloads" />
-    <option name="LAST_COMMIT_MESSAGE" value="declared operator overloads" />
+    <MESSAGE value="outlined test case for copy constructor" />
+    <option name="LAST_COMMIT_MESSAGE" value="outlined test case for copy constructor" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -686,8 +686,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/BeanieBabyTest.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+        <state relative-caret-position="413">
+          <caret line="43" column="64" selection-start-line="43" selection-start-column="64" selection-end-line="43" selection-end-column="64" />
         </state>
       </provider>
     </entry>
