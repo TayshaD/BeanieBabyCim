@@ -1,6 +1,8 @@
 #ifndef BEANIEBABYSIM_BEANIEBABY_H
 #define BEANIEBABYSIM_BEANIEBABY_H
 
+#include <cpr/cpr.h>
+#include <json.hpp>
 #include <string>
 #include <vector>
 
