@@ -6,6 +6,12 @@ BeanieBaby::BeanieBaby(std::string name, int copies, double base_price /*=5*/) :
                                                                                  copies_(copies),
                                                                                  base_price_(base_price) {};
 
+/**
+ * Copy constructor which creates a duplicate object whose copies_ property is set to copies, rather than the
+ * original object's copies_ property
+ * @param other_baby baby to create a duplicate object of
+ * @param copies # of copies to assign duplicate object
+ */
 BeanieBaby::BeanieBaby(const BeanieBaby& other_baby, int copies) {
     if (copies > other_baby.copies_) {
         copies = other_baby.copies_;
