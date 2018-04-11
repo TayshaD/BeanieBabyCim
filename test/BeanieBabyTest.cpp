@@ -16,11 +16,18 @@ TEST_CASE("Parsing beanie baby data from text") {
 }
 
 TEST_CASE("Finding baby by name works reliably") {
-    SECTION("Ideal case, perfectly matching name in predetermined collection") {}
+    std::vector<BeanieBaby> babies = ParseBeanieData(LoadBeanieBabyData());
+
+    SECTION("Ideal case, perfectly matching name in predetermined collection") {
+        BeanieBaby* result = FindBabyByName(babies, "Cubbie the Bear");
+        REQUIRE(result != nullptr);
+    }
+    /*
     SECTION("Name is case-insensitive") {}
     SECTION("Returns nullptr when baby is not located in list") {}
     SECTION("Returns nullptr when given name is empty string") {}
     SECTION("Returns nullptr when provided vector is empty") {}
+     */
 }
 
 TEST_CASE("Copying a BeanieBaby object doesn't copy the copies_ field") {

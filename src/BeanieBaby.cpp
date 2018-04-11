@@ -60,6 +60,12 @@ std::ostream& operator<<(std::ostream& output_stream, const BeanieBaby& baby) {
     output_stream << baby.name_ << " is a Beanie Baby worth $" << baby.market_price_ << ".";
 }
 
+BeanieBaby* FindBabyByName(const std::vector<BeanieBaby>& babies, std::string name) {
+    if (babies.empty() || name.empty()) {
+        return nullptr;
+    }
+}
+
 /**
  * Loads BeanieBaby data from fixed url to a string
  * @return string with url contents (i.e. json) or empty string on load fail

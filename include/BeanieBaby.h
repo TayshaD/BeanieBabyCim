@@ -73,12 +73,6 @@ public:
     friend std::ostream& operator<<(std::ostream&, const BeanieBaby& baby);
 };
 
-/**Method to read file from url and return string*/
-std::string LoadBeanieBabyData();
-
-/**Method to parse data from provided string and return BeanieBaby objects*/
-std::vector<BeanieBaby>  ParseBeanieData(std::string json_string);
-
 /**
  * Method to search a given vector of BeanieBaby objects for one with the given name. Returns nullptr if no baby is
  * found.
@@ -86,7 +80,12 @@ std::vector<BeanieBaby>  ParseBeanieData(std::string json_string);
  * @param name name of baby to search for
  * @return baby matching that object, if it exists, otherwise nullptr
  */
-BeanieBaby& FindBabyByName(const std::vector<BeanieBaby>&  babies, std::string name);
+BeanieBaby* FindBabyByName(const std::vector<BeanieBaby>&  babies, std::string name);
 
+/**Method to read file from url and return string*/
+std::string LoadBeanieBabyData();
+
+/**Method to parse data from provided string and return BeanieBaby objects*/
+std::vector<BeanieBaby>  ParseBeanieData(std::string json_string);
 
 #endif //BEANIEBABYSIM_BEANIEBABY_H

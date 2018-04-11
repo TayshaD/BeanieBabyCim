@@ -9,27 +9,27 @@
       <config projectName="BeanieBabySim" targetName="error_tests" />
       <config projectName="BeanieBabySim" targetName="post_tests" />
       <config projectName="BeanieBabySim" targetName="cpr" />
+      <config projectName="BeanieBabySim" targetName="util_tests" />
       <config projectName="BeanieBabySim" targetName="mongoose" />
-      <config projectName="BeanieBabySim" targetName="get_tests" />
       <config projectName="BeanieBabySim" targetName="session_tests" />
-      <config projectName="BeanieBabySim" targetName="head_tests" />
-      <config projectName="BeanieBabySim" targetName="opts-pdf" />
       <config projectName="BeanieBabySim" targetName="options_tests" />
+      <config projectName="BeanieBabySim" targetName="opts-pdf" />
+      <config projectName="BeanieBabySim" targetName="opts-html" />
       <config projectName="BeanieBabySim" targetName="test_server" />
-      <config projectName="BeanieBabySim" targetName="gtest_main" />
       <config projectName="BeanieBabySim" targetName="put_tests" />
       <config projectName="BeanieBabySim" targetName="uninstall" />
-      <config projectName="BeanieBabySim" targetName="generate-curl.1" />
-      <config projectName="BeanieBabySim" targetName="BeanieBabySim" />
+      <config projectName="BeanieBabySim" targetName="get_tests" />
+      <config projectName="BeanieBabySim" targetName="head_tests" />
+      <config projectName="BeanieBabySim" targetName="html" />
       <config projectName="BeanieBabySim" targetName="callback_tests" />
       <config projectName="BeanieBabySim" targetName="delete_tests" />
       <config projectName="BeanieBabySim" targetName="libcurl" />
-      <config projectName="BeanieBabySim" targetName="async_tests" />
+      <config projectName="BeanieBabySim" targetName="BeanieBabySim" />
       <config projectName="BeanieBabySim" targetName="proxy_tests" />
       <config projectName="BeanieBabySim" targetName="pdf" />
-      <config projectName="BeanieBabySim" targetName="util_tests" />
-      <config projectName="BeanieBabySim" targetName="html" />
-      <config projectName="BeanieBabySim" targetName="opts-html" />
+      <config projectName="BeanieBabySim" targetName="generate-curl.1" />
+      <config projectName="BeanieBabySim" targetName="async_tests" />
+      <config projectName="BeanieBabySim" targetName="gtest_main" />
       <config projectName="BeanieBabySim" targetName="patch_tests" />
     </generated>
   </component>
@@ -43,6 +43,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/BeanieBaby.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/BeanieBaby.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BeanieBaby.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/BeanieBaby.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/BeanieBabyTest.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/BeanieBabyTest.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/src/curlcpp/src/CMakeFiles/" />
@@ -58,11 +59,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BeanieBaby.h" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BeanieBaby.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/BeanieBaby.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="82" />
+            <state relative-caret-position="341">
+              <caret line="83" column="25" selection-start-line="83" selection-start-column="25" selection-end-line="83" selection-end-column="25" />
               <folding>
                 <element signature="e#71#91#0" expanded="true" />
               </folding>
@@ -70,11 +71,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BeanieBaby.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BeanieBaby.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/BeanieBaby.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="65" selection-start-line="65" selection-end-line="65" />
+            <state relative-caret-position="377">
+              <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Context.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/Context.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="217">
+              <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -82,8 +92,8 @@
       <file leaf-file-name="BeanieBabyTest.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/BeanieBabyTest.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="930">
-              <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
+            <state relative-caret-position="86">
+              <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -139,7 +149,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -161,6 +170,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -186,11 +196,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Catch.Copying a BeanieBaby object doesn't copy the copies_ field">
+  <component name="RunManager" selected="Catch.Finding baby by name works reliably">
     <configuration name="Comparison operator does not compare the copies_ field" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="BeanieBabySim" TARGET_NAME="BeanieBabyTest" RUN_TARGET_PROJECT_NAME="BeanieBabySim" RUN_TARGET_NAME="BeanieBabyTest" TEST_METHOD="Comparison operator does not compare the copies_ field" TEST_MODE="SUITE_TEST" />
     <configuration name="Copying a BeanieBaby object doesn't copy the copies_ field" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="BeanieBabySim" TARGET_NAME="BeanieBabyTest" RUN_TARGET_PROJECT_NAME="BeanieBabySim" RUN_TARGET_NAME="BeanieBabyTest" TEST_METHOD="Copying a BeanieBaby object doesn't copy the copies_ field" TEST_MODE="SUITE_TEST" />
-    <configuration name="Loading data from url" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="BeanieBabySim" TARGET_NAME="BeanieBabyTest" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="BeanieBabySim" RUN_TARGET_NAME="BeanieBabyTest" TEST_METHOD="Loading data from url" TEST_MODE="SUITE_TEST" />
-    <configuration name="Parsing beanie baby data from text" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="BeanieBabySim" TARGET_NAME="BeanieBabyTest" RUN_TARGET_PROJECT_NAME="BeanieBabySim" RUN_TARGET_NAME="BeanieBabyTest" TEST_METHOD="Parsing beanie baby data from text" TEST_MODE="SUITE_TEST" />
+    <configuration name="Finding baby by name works reliably" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="BeanieBabySim" TARGET_NAME="BeanieBabyTest" RUN_TARGET_PROJECT_NAME="BeanieBabySim" RUN_TARGET_NAME="BeanieBabyTest" TEST_METHOD="Finding baby by name works reliably" TEST_MODE="SUITE_TEST" />
+    <configuration name="&lt;&lt; operator prints nicely formatted string" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="BeanieBabySim" TARGET_NAME="BeanieBabyTest" RUN_TARGET_PROJECT_NAME="BeanieBabySim" RUN_TARGET_NAME="BeanieBabyTest" TEST_METHOD="&lt;&lt; operator prints nicely formatted string" TEST_MODE="SUITE_TEST" />
     <configuration name="&lt;&lt; operator prints nicely_formatted string" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="BeanieBabySim" TARGET_NAME="BeanieBabyTest" RUN_TARGET_PROJECT_NAME="BeanieBabySim" RUN_TARGET_NAME="BeanieBabyTest" TEST_METHOD="&lt;&lt; operator prints nicely_formatted string" TEST_MODE="SUITE_TEST" />
     <configuration name="BeanieBabySim" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="BeanieBabySim" TARGET_NAME="BeanieBabySim" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="BeanieBabySim" RUN_TARGET_NAME="BeanieBabySim" />
     <configuration name="BeanieBabyTest" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="BeanieBabySim" TARGET_NAME="BeanieBabyTest" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="BeanieBabySim" RUN_TARGET_NAME="BeanieBabyTest" />
@@ -253,19 +263,19 @@
       <item itemvalue="Application.test_server" />
       <item itemvalue="Application.util_tests" />
       <item itemvalue="Application.BeanieBabyTest" />
-      <item itemvalue="Catch.Loading data from url" />
-      <item itemvalue="Catch.Parsing beanie baby data from text" />
       <item itemvalue="Catch.Copying a BeanieBaby object doesn't copy the copies_ field" />
       <item itemvalue="Catch.Comparison operator does not compare the copies_ field" />
       <item itemvalue="Catch.&lt;&lt; operator prints nicely_formatted string" />
+      <item itemvalue="Catch.&lt;&lt; operator prints nicely formatted string" />
+      <item itemvalue="Catch.Finding baby by name works reliably" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Catch.Finding baby by name works reliably" />
+        <item itemvalue="Catch.&lt;&lt; operator prints nicely formatted string" />
         <item itemvalue="Catch.Copying a BeanieBaby object doesn't copy the copies_ field" />
         <item itemvalue="Catch.Comparison operator does not compare the copies_ field" />
         <item itemvalue="Catch.&lt;&lt; operator prints nicely_formatted string" />
-        <item itemvalue="Catch.Parsing beanie baby data from text" />
-        <item itemvalue="Catch.Loading data from url" />
       </list>
     </recent_temporary>
   </component>
@@ -273,51 +283,51 @@
     <configuration />
   </component>
   <component name="TestHistory">
-    <history-entry file="Parsing_beanie_baby_data_from_text - 2018.04.10 at 11h 44m 25s.xml">
-      <configuration name="Parsing beanie baby data from text" configurationId="CMakeCatchTestRunConfigurationType" />
+    <history-entry file="Finding_baby_by_name_works_reliably - 2018.04.11 at 09h 53m 33s.xml">
+      <configuration name="Finding baby by name works reliably" configurationId="CMakeCatchTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="Parsing_beanie_baby_data_from_text - 2018.04.10 at 11h 45m 18s.xml">
-      <configuration name="Parsing beanie baby data from text" configurationId="CMakeCatchTestRunConfigurationType" />
+    <history-entry file="Finding_baby_by_name_works_reliably - 2018.04.11 at 09h 53m 59s.xml">
+      <configuration name="Finding baby by name works reliably" configurationId="CMakeCatchTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="Parsing_beanie_baby_data_from_text - 2018.04.10 at 11h 45m 44s.xml">
-      <configuration name="Parsing beanie baby data from text" configurationId="CMakeCatchTestRunConfigurationType" />
+    <history-entry file="Finding_baby_by_name_works_reliably - 2018.04.11 at 09h 54m 11s.xml">
+      <configuration name="Finding baby by name works reliably" configurationId="CMakeCatchTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="___operator_prints_nicely_formatted_string - 2018.04.10 at 20h 01m 55s.xml">
-      <configuration name="&lt;&lt; operator prints nicely_formatted string" configurationId="CMakeCatchTestRunConfigurationType" />
+    <history-entry file="Finding_baby_by_name_works_reliably - 2018.04.11 at 09h 54m 29s.xml">
+      <configuration name="Finding baby by name works reliably" configurationId="CMakeCatchTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="___operator_prints_nicely_formatted_string - 2018.04.10 at 20h 02m 12s.xml">
-      <configuration name="&lt;&lt; operator prints nicely_formatted string" configurationId="CMakeCatchTestRunConfigurationType" />
+    <history-entry file="Finding_baby_by_name_works_reliably - 2018.04.11 at 09h 54m 48s.xml">
+      <configuration name="Finding baby by name works reliably" configurationId="CMakeCatchTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="___operator_prints_nicely_formatted_string - 2018.04.10 at 20h 02m 34s.xml">
-      <configuration name="&lt;&lt; operator prints nicely_formatted string" configurationId="CMakeCatchTestRunConfigurationType" />
+    <history-entry file="Finding_baby_by_name_works_reliably - 2018.04.11 at 09h 55m 18s.xml">
+      <configuration name="Finding baby by name works reliably" configurationId="CMakeCatchTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="Comparison_operator_does_not_compare_the_copies__field - 2018.04.10 at 20h 02m 41s.xml">
-      <configuration name="Comparison operator does not compare the copies_ field" configurationId="CMakeCatchTestRunConfigurationType" />
+    <history-entry file="Finding_baby_by_name_works_reliably - 2018.04.11 at 09h 55m 41s.xml">
+      <configuration name="Finding baby by name works reliably" configurationId="CMakeCatchTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="Copying_a_BeanieBaby_object_doesn't_copy_the_copies__field - 2018.04.10 at 20h 02m 46s.xml">
-      <configuration name="Copying a BeanieBaby object doesn't copy the copies_ field" configurationId="CMakeCatchTestRunConfigurationType" />
+    <history-entry file="Finding_baby_by_name_works_reliably - 2018.04.11 at 09h 55m 50s.xml">
+      <configuration name="Finding baby by name works reliably" configurationId="CMakeCatchTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="Copying_a_BeanieBaby_object_doesn't_copy_the_copies__field - 2018.04.10 at 20h 03m 19s.xml">
-      <configuration name="Copying a BeanieBaby object doesn't copy the copies_ field" configurationId="CMakeCatchTestRunConfigurationType" />
+    <history-entry file="Finding_baby_by_name_works_reliably - 2018.04.11 at 09h 56m 41s.xml">
+      <configuration name="Finding baby by name works reliably" configurationId="CMakeCatchTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="Copying_a_BeanieBaby_object_doesn't_copy_the_copies__field - 2018.04.10 at 20h 04m 07s.xml">
-      <configuration name="Copying a BeanieBaby object doesn't copy the copies_ field" configurationId="CMakeCatchTestRunConfigurationType" />
+    <history-entry file="Finding_baby_by_name_works_reliably - 2018.04.11 at 09h 57m 02s.xml">
+      <configuration name="Finding baby by name works reliably" configurationId="CMakeCatchTestRunConfigurationType" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.0" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.32973558" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Messages" order="7" weight="0.32852387" />
-      <window_info anchor="bottom" id="CMake" order="7" weight="0.26859045" />
+      <window_info anchor="bottom" id="CMake" order="7" weight="0.26799557" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32852387" />
       <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32852387" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -329,20 +339,20 @@
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15102482" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3286026" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32969433" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="CMake" order="10" visible="true" weight="0.26855895" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3286026" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Messages" order="7" weight="0.3286026" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32969433" />
+      <window_info anchor="bottom" id="CMake" order="10" visible="true" weight="0.26855895" />
       <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
@@ -350,11 +360,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added BeanieBaby header file" />
-    <MESSAGE value="updated BeanieBaby header with member variables" />
-    <MESSAGE value="added Data file" />
-    <MESSAGE value="relocated Data methods to BeanieBaby" />
-    <MESSAGE value="added includes for data parsing to BeanieBaby" />
     <MESSAGE value="outline definition of LoadBBD, takes parameter" />
     <MESSAGE value="defined LoadBBD" />
     <MESSAGE value="added test file for BeanieBaby class" />
@@ -375,11 +380,16 @@
     <MESSAGE value="defined basic accessors for BeanieBaby" />
     <MESSAGE value="replaced copy assignment with actual copy constructor" />
     <MESSAGE value="wrote ==, &lt;&lt; operators" />
-    <option name="LAST_COMMIT_MESSAGE" value="wrote ==, &lt;&lt; operators" />
+    <MESSAGE value="Declared function FindBabyByName" />
+    <MESSAGE value="Improved documentation for copy constructor" />
+    <MESSAGE value="added method set_market_value" />
+    <MESSAGE value="improved documentation" />
+    <MESSAGE value="outlined test cases for FindBabyByName" />
+    <option name="LAST_COMMIT_MESSAGE" value="outlined test cases for FindBabyByName" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -643,13 +653,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/include/Data.h" />
     <entry file="file://$PROJECT_DIR$/src/Data.cpp" />
-    <entry file="file://$PROJECT_DIR$/include/Context.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/TestMain.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="31">
@@ -673,28 +676,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/BeanieBabyTest.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="930">
-          <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
+        <state relative-caret-position="86">
+          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BeanieBaby.cpp">
+    <entry file="file://$PROJECT_DIR$/include/Context.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="65" selection-start-line="65" selection-end-line="65" />
+        <state relative-caret-position="217">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include/BeanieBaby.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="82" />
+        <state relative-caret-position="341">
+          <caret line="83" column="25" selection-start-line="83" selection-start-column="25" selection-end-line="83" selection-end-column="25" />
           <folding>
             <element signature="e#71#91#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BeanieBaby.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
         </state>
       </provider>
     </entry>
