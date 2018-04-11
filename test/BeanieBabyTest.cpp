@@ -86,3 +86,20 @@ TEST_CASE("<< operator prints nicely formatted string") {
     output << example_baby;
     REQUIRE(output.str() == "Iggy Example is a Beanie Baby worth $5.");
 }
+
+TEST_CASE("transfer_copies shifts copies between objects") {
+    BeanieBaby example_baby("Iggy Example", 16);
+    BeanieBaby other_example("Ziggy Example", 8);
+
+    SECTION("Valid value") {
+        example_baby.transfer_copies(other_example, 8);
+        CHECK(example_baby.get_copies() == 8);
+        CHECK(other_example.get_copies() == 16);
+    }
+
+    SECTION("Value > source copies_") {
+        example_baby.transfer_copies(other_example, 17);
+        CHECK(example_baby.get_copies() == 0);
+        CHECK(other_example.get_copies() == 24);
+    }
+}
