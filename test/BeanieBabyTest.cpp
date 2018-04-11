@@ -18,7 +18,7 @@ TEST_CASE("Parsing beanie baby data from text") {
 TEST_CASE("Finding baby by name works reliably") {
     std::vector<BeanieBaby> babies = ParseBeanieData(LoadBeanieBabyData());
     BeanieBaby target;
-    bool result = false;
+    bool result;
     SECTION("Ideal case, perfectly matching name in predetermined collection") {
         result = FindBabyByName(babies, "Cubbie the Bear", target);
         REQUIRE(result);

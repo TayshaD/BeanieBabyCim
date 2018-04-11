@@ -2,7 +2,7 @@
 
 BeanieBaby::BeanieBaby() : name_(""), base_price_(5), copies_(1) {};
 
-BeanieBaby::BeanieBaby(std::string name, int copies, double base_price /*=5*/) : name_(name),
+BeanieBaby::BeanieBaby(std::string name, int copies, double base_price /*=5*/) : name_(std::move(name)),
                                                                                  copies_(copies),
                                                                                  base_price_(base_price) {};
 
@@ -46,6 +46,15 @@ bool BeanieBaby::is_retired() {
 void BeanieBaby::set_market_value(double market_value) {
     this->market_value_ = market_value;
     this->market_price_ = base_price_ * market_value;
+}
+
+void BeanieBaby::transfer_copies(BeanieBaby &other_baby, int copies_to_transfer) {
+    if (copies_to_transfer > this->copies_) {
+        copies_to_transfer = this->copies_;
+    }
+
+    other_baby.copies_ += copies_to_transfer;
+    this->copies_ -= copies_to_transfer;
 }
 
 bool BeanieBaby::operator==(const BeanieBaby& other_baby) const {
