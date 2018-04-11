@@ -71,4 +71,14 @@ std::string LoadBeanieBabyData();
 /**Method to parse data from provided string and return BeanieBaby objects*/
 std::vector<BeanieBaby>  ParseBeanieData(std::string json_string);
 
+/**
+ * Method to search a given vector of BeanieBaby objects for one with the given name. Returns nullptr if no baby is
+ * found.
+ * @param babies vector of babies to search
+ * @param name name of baby to search for
+ * @return baby matching that object, if it exists, otherwise nullptr
+ */
+BeanieBaby& FindBabyByName(const std::vector<BeanieBaby>&  babies, std::string name);
+
+
 #endif //BEANIEBABYSIM_BEANIEBABY_H

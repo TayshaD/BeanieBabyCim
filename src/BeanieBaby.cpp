@@ -37,6 +37,18 @@ bool BeanieBaby::is_retired() {
     return this->retired_;
 }
 
+bool BeanieBaby::operator==(const BeanieBaby& other_baby) const {
+    std::string lower_baby_name;
+    std::string lower_other_name;
+    std::transform(this->name_.begin(), this->name_.end(), lower_baby_name.begin(), ::tolower);
+    std::transform(other_baby.name_.begin(), other_baby.name_.end(), lower_other_name.begin(), ::tolower);
+    return (lower_baby_name == lower_other_name);
+};
+
+std::ostream& operator<<(std::ostream& output_stream, const BeanieBaby& baby) {
+    output_stream << baby.name_ << " is a Beanie Baby worth $" << baby.market_price_ << ".";
+}
+
 /**
  * Loads BeanieBaby data from fixed url to a string
  * @return string with url contents (i.e. json) or empty string on load fail
@@ -50,6 +62,7 @@ bool BeanieBaby::is_retired() {
     }
     return "";
 }
+
 
 /**
  * Parses raw json into BeanieBaby objects
@@ -72,14 +85,3 @@ std::vector<BeanieBaby> ParseBeanieData(std::string raw_json) {
     return babies;
  }
 
- bool BeanieBaby::operator==(const BeanieBaby& other_baby) const {
-    std::string lower_baby_name;
-    std::string lower_other_name;
-    std::transform(this->name_.begin(), this->name_.end(), lower_baby_name.begin(), ::tolower);
-    std::transform(other_baby.name_.begin(), other_baby.name_.end(), lower_other_name.begin(), ::tolower);
-    return (lower_baby_name == lower_other_name);
-};
-
-std::ostream& operator<<(std::ostream& output_stream, const BeanieBaby& baby) {
-    output_stream << baby.name_ << " is a Beanie Baby worth $" << baby.market_price_ << ".";
-}
