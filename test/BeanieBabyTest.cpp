@@ -15,6 +15,14 @@ TEST_CASE("Parsing beanie baby data from text") {
    }
 }
 
+TEST_CASE("Finding baby by name works reliably") {
+    SECTION("Ideal case, perfectly matching name in predetermined collection") {}
+    SECTION("Name is case-insensitive") {}
+    SECTION("Returns nullptr when baby is not located in list") {}
+    SECTION("Returns nullptr when given name is empty string") {}
+    SECTION("Returns nullptr when provided vector is empty") {}
+}
+
 TEST_CASE("Copying a BeanieBaby object doesn't copy the copies_ field") {
     BeanieBaby example_baby("Iggy Example", 16);
 
@@ -49,7 +57,7 @@ TEST_CASE("Comparison operator does not compare the copies_ field") {
     REQUIRE(example_baby == other_baby);
 }
 
-TEST_CASE("<< operator prints nicely_formatted string") {
+TEST_CASE("<< operator prints nicely formatted string") {
     BeanieBaby example_baby("Iggy Example", 16);
     std::ostringstream output;
     output << example_baby;
