@@ -56,7 +56,7 @@ public:
      * @param other_baby the baby to compare to
      * @return whether the two babies are equal
      */
-    friend bool operator==(BeanieBaby& other_baby);
+    bool operator==(const BeanieBaby& other_baby) const;
 
     /**Overloading << operator to allow
      * @param baby
