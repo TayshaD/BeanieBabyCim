@@ -60,11 +60,6 @@ std::ostream& operator<<(std::ostream& output_stream, const BeanieBaby& baby) {
     output_stream << baby.name_ << " is a Beanie Baby worth $" << baby.market_price_ << ".";
 }
 
-BeanieBaby* FindBabyByName(const std::vector<BeanieBaby>& babies, std::string name) {
-    if (babies.empty() || name.empty()) {
-        return nullptr;
-    }
-}
 
 /**
  * Loads BeanieBaby data from fixed url to a string
@@ -101,4 +96,20 @@ std::vector<BeanieBaby> ParseBeanieData(std::string raw_json) {
 
     return babies;
  }
+
+bool FindBabyByName(const std::vector<BeanieBaby>& babies, std::string name, BeanieBaby& result) {
+    if (babies.empty() || name.empty()) {
+        return false;
+    }
+
+    BeanieBaby target = BeanieBaby(name, 0);
+    for (const auto& baby : babies) {
+        if (baby == target) {
+            result = baby;
+            return true;
+        }
+    }
+
+    return false;
+}
 

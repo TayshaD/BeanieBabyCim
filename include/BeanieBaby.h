@@ -74,13 +74,15 @@ public:
 };
 
 /**
- * Method to search a given vector of BeanieBaby objects for one with the given name. Returns nullptr if no baby is
- * found.
- * @param babies vector of babies to search
- * @param name name of baby to search for
- * @return baby matching that object, if it exists, otherwise nullptr
+ * (Sub-optimal) method to return an optional reference to a BeanieBaby parameter. The function actually returns
+ * true or false depending on whether the target baby is found in the given collection, but if the baby is found the
+ * result parameter will be updated to refer to the found object.
+ * @param babies Collection of BeanieBaby objects
+ * @param name name of BeanieBaby object
+ * @param result result, will only be updated if search is successful
+ * @return
  */
-BeanieBaby* FindBabyByName(const std::vector<BeanieBaby>&  babies, std::string name);
+bool FindBabyByName(const std::vector<BeanieBaby>& babies, std::string name, BeanieBaby& result);
 
 /**Method to read file from url and return string*/
 std::string LoadBeanieBabyData();
