@@ -36,6 +36,9 @@ public:
     /**Breaking the rule of three/five: I need a custom copy constructor, because in my case I DON'T want every member
      * to be copied, as in the default. Consider the case where one buys from the store. You now have x amount
      * of objects, but the store has y amount of the same object. In total there are still x+y objects.
+     *
+     * Use case: "stocking" user inventory or market inventory with beanie babies without modifying global list of
+     * babies or losing count of how many total babies are available overall (can look up original object's copies_)
      */
     BeanieBaby(const BeanieBaby& other_baby, int copies = 1);
 
@@ -49,6 +52,9 @@ public:
 
     void set_market_value(double market_value);
 
+    /**Transfers copies from this baby to the other baby. Use case: consider a customer purchasing 3 babies from
+     * a store that had 8 of those on sell. Now the store has 5 of those beanie babies, and that customer has taken 3.
+     * There are 8 total copies either way.*/
     void transfer_copies(BeanieBaby& other_baby, int copies_to_transfer);
 
     static std::vector<BeanieBaby> All_Babies;
@@ -62,7 +68,7 @@ public:
 
     /**Overloading << operator to allow
      * @param baby
-     * @return
+     * @return modified output stream
      */
     friend std::ostream& operator<<(std::ostream&, const BeanieBaby& baby);
 };
