@@ -43,6 +43,11 @@ bool BeanieBaby::is_retired() {
     return this->retired_;
 }
 
+void BeanieBaby::set_market_value(double market_value) {
+    this->market_value_ = market_value;
+    this->market_price_ = base_price_ * market_value;
+}
+
 bool BeanieBaby::operator==(const BeanieBaby& other_baby) const {
     std::string lower_baby_name;
     std::string lower_other_name;

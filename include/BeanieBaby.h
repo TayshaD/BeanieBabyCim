@@ -47,6 +47,8 @@ public:
 
     bool is_retired();
 
+    void set_market_value(double market_value);
+
     void transfer_copies(BeanieBaby& other_baby, int copies_to_transfer);
 
     static std::vector<BeanieBaby> All_Babies;
