@@ -82,7 +82,7 @@ public:
  * @param result result, will only be updated if search is successful
  * @return
  */
-bool FindBabyByName(const std::vector<BeanieBaby>& babies, std::string name, BeanieBaby& result);
+bool FindBabyByName(const std::vector<BeanieBaby>& babies, std::string name, BeanieBaby& target);
 
 /**Method to read file from url and return string*/
 std::string LoadBeanieBabyData();

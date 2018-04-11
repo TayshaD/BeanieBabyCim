@@ -49,10 +49,11 @@ void BeanieBaby::set_market_value(double market_value) {
 }
 
 bool BeanieBaby::operator==(const BeanieBaby& other_baby) const {
-    std::string lower_baby_name;
-    std::string lower_other_name;
+    std::string lower_baby_name = this->name_;
+    std::string lower_other_name = other_baby.name_;
     std::transform(this->name_.begin(), this->name_.end(), lower_baby_name.begin(), ::tolower);
     std::transform(other_baby.name_.begin(), other_baby.name_.end(), lower_other_name.begin(), ::tolower);
+    std::cout << lower_baby_name << " vs " << lower_other_name;
     return (lower_baby_name == lower_other_name);
 };
 
@@ -97,15 +98,16 @@ std::vector<BeanieBaby> ParseBeanieData(std::string raw_json) {
     return babies;
  }
 
-bool FindBabyByName(const std::vector<BeanieBaby>& babies, std::string name, BeanieBaby& result) {
+bool FindBabyByName(const std::vector<BeanieBaby>& babies, std::string name, BeanieBaby& target) {
     if (babies.empty() || name.empty()) {
         return false;
     }
 
-    BeanieBaby target = BeanieBaby(name, 0);
+    BeanieBaby mock(name, 0);
+
     for (const auto& baby : babies) {
-        if (baby == target) {
-            result = baby;
+        if (baby == mock) {
+            target = baby;
             return true;
         }
     }

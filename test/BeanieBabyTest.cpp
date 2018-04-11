@@ -17,17 +17,34 @@ TEST_CASE("Parsing beanie baby data from text") {
 
 TEST_CASE("Finding baby by name works reliably") {
     std::vector<BeanieBaby> babies = ParseBeanieData(LoadBeanieBabyData());
-
+    BeanieBaby target;
+    bool result = false;
     SECTION("Ideal case, perfectly matching name in predetermined collection") {
-        BeanieBaby target;
-        bool result = FindBabyByName(babies, "Cubbie the Bear", target);
+        result = FindBabyByName(babies, "Cubbie the Bear", target);
         REQUIRE(result);
+        REQUIRE(target.get_name() == "Cubbie the Bear");
     }
-    SECTION("Name is case-insensitive") {}
-    SECTION("Returns nullptr when baby is not located in list") {}
-    SECTION("Returns nullptr when given name is empty string") {}
-    SECTION("Returns nullptr when provided vector is empty") {}
+
+    SECTION("Name is case-insensitive") {
+        result = FindBabyByName(babies, "cubBiE THE beaR", target);
+        REQUIRE(result);
+        REQUIRE(target.get_name() == "Cubbie the Bear");
+    }
+
+    SECTION("Returns false when baby is not located in list") {
+        result = FindBabyByName(babies, "Mrs. Udderly", target);
+        REQUIRE_FALSE(result);
+    }
+    SECTION("Returns false when given name is empty string") {
+        result = FindBabyByName(babies, "", target);
+        REQUIRE_FALSE(result);
+    }
+    SECTION("Returns false when provided vector is empty") {
+        result = FindBabyByName({}, "Felix the Cat", target);
+        REQUIRE_FALSE(result);
+    }
 }
+
 
 TEST_CASE("Copying a BeanieBaby object doesn't copy the copies_ field") {
     BeanieBaby example_baby("Iggy Example", 16);
