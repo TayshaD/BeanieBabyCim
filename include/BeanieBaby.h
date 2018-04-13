@@ -42,9 +42,9 @@ public:
      */
     BeanieBaby(const BeanieBaby& other_baby, int copies = 1);
 
-    std::string get_name();
+    std::string get_name() const;
 
-    int get_copies();
+    int get_copies() const ;
 
     double get_price();
 
@@ -84,6 +84,13 @@ public:
  */
 bool FindBabyByName(const std::vector<BeanieBaby>& babies, std::string name, BeanieBaby& target);
 
+/**
+ * Counts the  total number of babies within a given collection based on how many copies of each baby exists, NOT based
+ * on the amount of Baby objects the collection contains.
+ * @param babies vector of Beaniebaby objects
+ * @return aggregation of baby copies_
+ */
+int CalculateTotalBabies(const std::vector<BeanieBaby>& babies);
 /**Method to read file from url and return string*/
 std::string LoadBeanieBabyData();
 

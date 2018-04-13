@@ -27,11 +27,11 @@ BeanieBaby::BeanieBaby(const BeanieBaby& other_baby, int copies) {
 
 std::vector<BeanieBaby> All_Babies = ParseBeanieData(LoadBeanieBabyData());
 
-std::string BeanieBaby::get_name() {
+std::string BeanieBaby::get_name() const{
     return this->name_;
 }
 
-int BeanieBaby::get_copies() {
+int BeanieBaby::get_copies() const {
     return this->copies_;
 }
 
@@ -124,3 +124,14 @@ bool FindBabyByName(const std::vector<BeanieBaby>& babies, std::string name, Bea
     return false;
 }
 
+int calculateTotalBabies(const std::vector<BeanieBaby>& babies) {
+    if (babies.empty()) {
+        return 0;
+    }
+
+    int total_babies = 0;
+    for (const BeanieBaby& baby : babies) {
+        total_babies += baby.get_copies();
+    }
+    return total_babies;
+}
