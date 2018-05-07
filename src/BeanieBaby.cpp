@@ -2,28 +2,11 @@
 
 BeanieBaby::BeanieBaby() : name_(""), base_price_(5), copies_(1) {};
 
-BeanieBaby::BeanieBaby(std::string name, int copies, double base_price /*=5*/) : name_(std::move(name)),
+BeanieBaby::BeanieBaby(std::string name, int copies, double base_price /*=5*/) : name_(name),
                                                                                  copies_(copies),
-                                                                                 base_price_(base_price) {};
+                                                                                 base_price_(base_price),
+                                                                                 market_price_(base_price){};
 
-/**
- * Copy constructor which creates a duplicate object whose copies_ property is set to copies, rather than the
- * original object's copies_ property
- * @param other_baby baby to create a duplicate object of
- * @param copies # of copies to assign duplicate object
- */
-BeanieBaby::BeanieBaby(const BeanieBaby& other_baby, int copies) {
-    if (copies > other_baby.copies_) {
-        copies = other_baby.copies_;
-    } else if (copies < 0) {
-        copies = 0;
-    }
-
-    this->name_ = other_baby.name_;
-    this->base_price_ = other_baby.base_price_;
-    this->market_value_ = other_baby.market_value_;
-    this->copies_ = copies;
-}
 
 std::vector<BeanieBaby> All_Babies = ParseBeanieData(LoadBeanieBabyData());
 
@@ -35,17 +18,29 @@ int BeanieBaby::get_copies() const {
     return this->copies_;
 }
 
-double BeanieBaby::get_price() {
+double BeanieBaby::get_price() const{
     return this->market_price_;
 }
 
-bool BeanieBaby::is_retired() {
+bool BeanieBaby::is_retired() const {
     return this->retired_;
 }
 
 void BeanieBaby::set_market_value(double market_value) {
     this->market_value_ = market_value;
     this->market_price_ = base_price_ * market_value;
+}
+
+void BeanieBaby::make_copies(int copies_to_make, BeanieBaby& output_baby) {
+    if (copies_to_make > this->copies_) {
+        copies_to_make = this->copies_;
+    } 
+
+    if (copies_to_make < 0) {
+        copies_to_make = 0;
+    }
+
+    output_baby.copies_ = copies_to_make;
 }
 
 void BeanieBaby::transfer_copies(BeanieBaby &other_baby, int copies_to_transfer) {
@@ -62,7 +57,6 @@ bool BeanieBaby::operator==(const BeanieBaby& other_baby) const {
     std::string lower_other_name = other_baby.name_;
     std::transform(this->name_.begin(), this->name_.end(), lower_baby_name.begin(), ::tolower);
     std::transform(other_baby.name_.begin(), other_baby.name_.end(), lower_other_name.begin(), ::tolower);
-    std::cout << lower_baby_name << " vs " << lower_other_name;
     return (lower_baby_name == lower_other_name);
 };
 
@@ -124,13 +118,13 @@ bool FindBabyByName(const std::vector<BeanieBaby>& babies, std::string name, Bea
     return false;
 }
 
-int calculateTotalBabies(const std::vector<BeanieBaby>& babies) {
+int CalculateTotalBabies(const std::vector<BeanieBaby>& babies) {
     if (babies.empty()) {
         return 0;
     }
 
     int total_babies = 0;
-    for (const BeanieBaby& baby : babies) {
+    for (const auto& baby : babies) {
         total_babies += baby.get_copies();
     }
     return total_babies;
