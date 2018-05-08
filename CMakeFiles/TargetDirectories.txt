@@ -1,3 +1,0 @@
-/home/taja/CLionProjects/BeanieBabySim/CMakeFiles/rebuild_cache.dir
-/home/taja/CLionProjects/BeanieBabySim/CMakeFiles/edit_cache.dir
-/home/taja/CLionProjects/BeanieBabySim/CMakeFiles/BeanieBabySim.dir

@@ -20,7 +20,7 @@ class BeanieBaby {
     double market_value_ = 1;
 
     /**The price of the baby after its current market value is taken into account*/
-    double market_price_;
+    double market_price_ = base_price_;
 
     /**How many copies of this baby exist in the sim world.*/
     int copies_;
@@ -29,27 +29,28 @@ class BeanieBaby {
     bool retired_ = false;
 
 public:
-    explicit BeanieBaby();
+    BeanieBaby();
 
-    explicit BeanieBaby(std::string name, int copies, double base_price = 5);
+    BeanieBaby(std::string name, int copies, double base_price = 5);
+
+    /**Breaking the rule of three/five: I need a custom copy constructor, because in my case I DON'T want every member
+     * to be copied, as in the default. Consider the case where one buys from the store. You now have x amount
+     * of objects, but the store has y amount of the same object. In total there are still x+y objects.
+     *
+     * Use case: "stocking" user inventory or market inventory with beanie babies without modifying global list of
+     * babies or losing count of how many total babies are available overall (can look up original object's copies_)
+     */
+    BeanieBaby(const BeanieBaby& other_baby, int copies = 1);
 
     std::string get_name() const;
 
     int get_copies() const ;
 
-    double get_price() const;
+    double get_price();
 
-    bool is_retired() const;
+    bool is_retired();
 
     void set_market_value(double market_value);
-
-    /**
-     * Makes a duplicate object from the input baby with the specified number of copies rather than duplicating the copies field.
-     * @param original_baby
-     * @param make_copies
-     * @return
-     */
-    void make_copies(int copies_to_make, BeanieBaby& output_baby);
 
     /**Transfers copies from this baby to the other baby. Use case: consider a customer purchasing 3 babies from
      * a store that had 8 of those on sell. Now the store has 5 of those beanie babies, and that customer has taken 3.
@@ -78,7 +79,7 @@ public:
  * result parameter will be updated to refer to the found object.
  * @param babies Collection of BeanieBaby objects
  * @param name name of BeanieBaby object
- * @param target result, will only be updated if search is successful
+ * @param result result, will only be updated if search is successful
  * @return
  */
 bool FindBabyByName(const std::vector<BeanieBaby>& babies, std::string name, BeanieBaby& target);

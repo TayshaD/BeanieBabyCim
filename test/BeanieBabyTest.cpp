@@ -45,6 +45,34 @@ TEST_CASE("Finding baby by name works reliably") {
     }
 }
 
+
+TEST_CASE("Copying a BeanieBaby object doesn't copy the copies_ field") {
+    BeanieBaby example_baby("Iggy Example", 16);
+
+    SECTION("Specifying valid number of copies creates duplicate with specified number of copies") {
+        BeanieBaby copy(example_baby, 8);
+        CHECK(copy.get_copies() == 8);
+        CHECK(example_baby.get_copies() == 16);
+    }
+
+    SECTION("Specifying an invalid number of copies creates duplicate with default number of copies") {
+        SECTION("# of copies > original object results in copy.copies_ = original copies_ field") {
+            BeanieBaby copy(example_baby, 24);
+            CHECK(copy.get_copies() == example_baby.get_copies());
+        }
+
+        SECTION("# copies < 0 results in copies_ = 0") {
+            BeanieBaby copy(example_baby, -4);
+            CHECK(copy.get_copies() == 0);
+        }
+    }
+
+    SECTION("Not specifying any # of copies results in copies_ = 1") {
+        BeanieBaby copy(example_baby);
+        CHECK(copy.get_copies() == 1);
+    }
+}
+
 TEST_CASE("Comparison operator does not compare the copies_ field") {
     BeanieBaby example_baby("Iggy example", 16);
     BeanieBaby other_baby("Iggy example", 5);
@@ -74,32 +102,4 @@ TEST_CASE("transfer_copies shifts copies between objects") {
         CHECK(example_baby.get_copies() == 0);
         CHECK(other_example.get_copies() == 24);
     }
-}
-
-TEST_CASE("Calculate total babies returns correct number") {
-    BeanieBaby example("Iggy Example", 3);
-    std::vector<BeanieBaby> example_baby;
-    example_baby.push_back(example);
-    std::cout << CalculateTotalBabies(example_baby);
-}
-
-TEST_CASE("Making copies functions logically") {
-    BeanieBaby example("Iggs", 16);
-    BeanieBaby result;
-
-    SECTION("Valid num of copies") {
-        example.make_copies(8, result);
-        REQUIRE(result.get_copies() == 8);
-    }
-
-    SECTION("Specifying num of copies > available copies results in all copies  ") {
-        example.make_copies(17, result);
-        REQUIRE(result.get_copies() == 16);
-    }
-    
-    SECTION("Specifying num of copies < 0 results in no copies being made") {
-        example.make_copies(-1, result);
-        REQUIRE(result.get_copies() == 0);
-    }
-
 }

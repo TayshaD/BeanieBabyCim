@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/BeanieBabySim.dir/src/Simulation.cpp.o CMakeFiles/BeanieBabySim.dir/src/main.cpp.o  -o BeanieBabySim 
