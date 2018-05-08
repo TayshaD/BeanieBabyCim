@@ -57,7 +57,19 @@ void BeanieBaby::transfer_copies(BeanieBaby &other_baby, int copies_to_transfer)
     this->copies_ -= copies_to_transfer;
 }
 
-<<<<<<< Updated upstream
+void BeanieBaby::make_copies(int copies_to_make, BeanieBaby& output_baby) {
+    if (copies_to_make > this->copies_) {
+        copies_to_make = this->copies_;
+    } 
+
+    if (copies_to_make < 0) {
+        copies_to_make = 0;
+    }
+
+    output_baby.copies_ = copies_to_make;
+}
+
+
 bool BeanieBaby::operator==(const BeanieBaby& other_baby) const {
     std::string lower_baby_name = this->name_;
     std::string lower_other_name = other_baby.name_;
@@ -68,6 +80,8 @@ bool BeanieBaby::operator==(const BeanieBaby& other_baby) const {
 };
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> stash
 
 std::ostream& operator<<(std::ostream& output_stream, const BeanieBaby& baby) {
     output_stream << baby.name_ << " is a Beanie Baby worth $" << baby.market_price_ << ".";
