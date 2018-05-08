@@ -57,6 +57,7 @@ void BeanieBaby::transfer_copies(BeanieBaby &other_baby, int copies_to_transfer)
     this->copies_ -= copies_to_transfer;
 }
 
+<<<<<<< Updated upstream
 bool BeanieBaby::operator==(const BeanieBaby& other_baby) const {
     std::string lower_baby_name = this->name_;
     std::string lower_other_name = other_baby.name_;
@@ -65,6 +66,8 @@ bool BeanieBaby::operator==(const BeanieBaby& other_baby) const {
     std::cout << lower_baby_name << " vs " << lower_other_name;
     return (lower_baby_name == lower_other_name);
 };
+=======
+>>>>>>> Stashed changes
 
 std::ostream& operator<<(std::ostream& output_stream, const BeanieBaby& baby) {
     output_stream << baby.name_ << " is a Beanie Baby worth $" << baby.market_price_ << ".";

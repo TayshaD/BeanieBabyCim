@@ -64,7 +64,43 @@ public:
      * @param other_baby the baby to compare to
      * @return whether the two babies are equal
      */
-    bool operator==(const BeanieBaby& other_baby) const;
+    friend inline bool operator==(const BeanieBaby& lhs, const BeanieBaby& rhs) {
+        std::string lower_lhs_name = lhs.name_;
+        std::string lower_rhs_name = rhs.name_;
+        std::transform(lhs.name_.begin(), lhs.name_.end(), lower_lhs_name.begin(), ::tolower);
+        std::transform(rhs.name_.begin(), rhs.name_.end(), lower_rhs_name.begin(), ::tolower);
+        return (lower_lhs_name == lower_rhs_name);
+    };
+
+    friend inline bool operator!=(const BeanieBaby& lhs, const BeanieBaby& rhs) {
+        return !operator==(lhs, rhs);
+    }
+
+    /**
+        When comparing two BeanieBaby objects I want to compare the amount of copies that exist of either baby.
+        @param other_baby the baby to compare to
+        @return wheher the two babies are equal
+    */
+    friend inline bool operator<(const BeanieBaby& lhs, const BeanieBaby& rhs) {
+        return lhs.copies_ < rhs.copies_;
+    }
+
+    /**Now that I've overloaded a couple comparison operators I must overload them all.*/
+    friend inline bool operator>(const BeanieBaby& lhs, const BeanieBaby& rhs) {
+        return !operator<(lhs, rhs);
+    }
+
+    friend inline bool operator<=(const BeanieBaby& lhs, const BeanieBaby& rhs) {
+        return operator<(lhs, rhs) || operator==(lhs, rhs);
+    }
+
+    friend inline bool operator>=(const BeanieBaby& lhs, const BeanieBaby& rhs) {
+        return operator>(lhs, rhs) || operator==(lhs, rhs);
+    }
+
+    
+
+
 
     /**Overloading << operator to allow
      * @param baby

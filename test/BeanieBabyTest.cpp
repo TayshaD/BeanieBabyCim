@@ -80,6 +80,32 @@ TEST_CASE("Comparison operator does not compare the copies_ field") {
     REQUIRE(example_baby == other_baby);
 }
 
+TEST_CASE("Operator royale") {
+
+    BeanieBaby example_baby("Iggy example", 16);
+    BeanieBaby other_baby("Iggs", 5);
+
+    SECTION("!=") {
+        REQUIRE(example_baby != other_baby);
+    }
+
+    SECTION("<") {
+        REQUIRE(other_baby < example_baby);
+    }
+
+    SECTION(">") {
+        REQUIRE(example_baby > other_baby);
+    }
+
+    SECTION("<=") {
+        REQUIRE(other_baby <= example_baby);
+    }
+
+    SECTION(">=") {
+        REQUIRE(example_baby >= other_baby);
+    }
+}
+
 TEST_CASE("<< operator prints nicely formatted string") {
     BeanieBaby example_baby("Iggy Example", 16);
     std::ostringstream output;
